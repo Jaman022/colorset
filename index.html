@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример цветовых моделей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .block {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+        }
+        
+        .block-hex {
+    background-color: #f0f0f0; /* Цвет фона с использованием hex */
+    color: #4c4ff4; /* Цвет текста с использованием hex */
+        }
+
+.block-rgb {
+    background-color: rgb(240, 240, 240); /* Цвет фона с использованием rgb */
+    color: rgb(107, 227, 167); /* Цвет текста с использованием rgb */
+}
+
+.block-rgba {
+    background-color: rgba(240, 240, 240, 0.8); /* Цвет фона с использованием rgba */
+    color: rgba(206, 147, 147, 1); /* Цвет текста с использованием rgba */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="block block-hex">
+        <h2>Блок с цветами, заданными через hex</h2>
+        <p>Это текст внутри блока, фон и текст которого заданы с использованием шестнадцатеричной системы.</p>
+    </div>
+
+    <div class="block block-rgb">
+        <h2>Блок с цветами, заданными через rgb</h2>
+        <p>Этот текст и фон блока используют модель rgb для задания цветов.</p>
+    </div>
+
+    <div class="block block-rgba">
+        <h2>Блок с цветами, заданными через rgba</h2>
+        <p>В этом блоке используется rgba для задания цветов с прозрачностью. <strong>Текст яркий и четкий!</strong></p>
+        <img src="https://via.placeholder.com/300" alt="Пример изображения">
+    </div>
+
+</body>
+</html>
